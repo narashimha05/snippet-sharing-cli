@@ -1,0 +1,41 @@
+{
+  "name": "snippet-sharing-cli",
+  "version": "2.0.1",
+  "description": "A CLI tool for sharing and retrieving code snippets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "pkg . --out-dir build --targets node14 --exclude bson,coverage-v8",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "snippet-share": "./index.js"
+  },
+  "keywords": [
+    "code",
+    "snippet",
+    "sharing",
+    "cli",
+    "code-sharing",
+    "code-snippet",
+    "mongodb",
+    "readline-sync",
+    "mongoose",
+    "snippet-manager",
+    "code-repository"
+  ],
+  "author": "Narashimha",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.4.3",
+    "multiline-ts": "^3.1.0",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
